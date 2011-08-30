@@ -96,6 +96,7 @@ module Crewait
     end
     # this was originally called "<<", but changed for namespacing
     def respectively_insert(other_hash)
+      debugger
       new_keys = other_hash.keys - self.keys
       length = new_keys.empty? ? 0 : self.inner_length 
       new_keys.each do |key|
