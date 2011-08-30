@@ -11,6 +11,7 @@ module Crewait
   
   # add one crewait instance
   def self.for(model, hash)
+    debugger
     # if this class is new, add in the next_insert_value
     @@hash_of_next_inserts[model] ||= model.next_insert_id
     # if this class is new, create a new hash to receive it
